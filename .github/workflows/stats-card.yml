@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "0 * * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/stats-card.yml"
 
 permissions:
   contents: write
@@ -22,10 +26,15 @@ jobs:
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Bust image cache in README
+        run: |
+          TS=$(date +%s)
+          sed -i -E "s|stats\.svg\?v=[0-9]+|stats.svg?v=${TS}|g" README.md
+
       - name: Commit cards
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add profile/stats.svg
-          git commit -m "Update README card" || exit 0
+          git add profile/stats.svg README.md
+          git diff --cached --quiet || git commit -m "Update README card"
           git push
