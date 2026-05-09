@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120" role="img" aria-label="Issues solved: 0">
+  <style>
+    .bg     { fill: #151515; stroke: #e4e2e2; stroke-opacity: 0.1; }
+    .title  { fill: #fe428e; font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; }
+    .count  { fill: #79ff97; font: 700 48px 'Segoe UI', Ubuntu, Sans-Serif; }
+    .sub    { fill: #9f9f9f; font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; }
+  </style>
+  <rect class="bg" x="0.5" y="0.5" width="399" height="119" rx="6" />
+  <text class="title" x="20" y="34">Issues Solved</text>
+  <text class="count" x="20" y="86">0</text>
+  <text class="sub"   x="20" y="108">closed issues assigned to Bownlux</text>
+</svg>
