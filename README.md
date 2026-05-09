@@ -1,11 +1,5 @@
-# Bownlux's GitHub Stats
-
-<<<<<<< HEAD
+# GitHub Stats
 ![Bownlux's GitHub stats](https://raw.githubusercontent.com/Bownlux/Github-Bownlux-stats/main/profile/stats.svg?v=1778335228)
-![Issues solved by Bownlux](https://raw.githubusercontent.com/Bownlux/Github-Bownlux-stats/main/profile/issues-solved.svg?v=1778335228)
-=======
-![Bownlux's GitHub stats](https://raw.githubusercontent.com/Bownlux/Github-Bownlux-stats/main/profile/stats.svg?v=1778335228)
->>>>>>> 5088a84054f073d334022d19f8e177f419dc248a
 
 ---
 
