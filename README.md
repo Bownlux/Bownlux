@@ -3,4 +3,4 @@
 
 ---
 
-Inspired by [Octol1ttle/Octol1ttle](https://github.com/Octol1ttle/Octol1ttle/tree/master).
+Made possible with https://github.com/anuraghazra/github-readme-stats
