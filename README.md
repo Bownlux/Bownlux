@@ -1,10 +1,11 @@
 # GitHub Stats
-![Bownlux's GitHub stats](https://raw.githubusercontent.com/Bownlux/Github-Bownlux-stats/main/profile/stats.svg?v=1782824476)
+[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=Bownlux&show_icons=true&include_all_commits=true&theme=dark&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR)](https://github-stats-extended.vercel.app/api?username=Bownlux&show_icons=true&include_all_commits=true&theme=dark)
 
-[![Bownlux's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Bownlux&layout=donut&show_icons=true&theme=dark)
-)](https://github.com/anuraghazra/github-readme-stats)
+[![Bownlux's Top Langs](https://github-stats-extended.vercel.app/api/top-langs?username=Bownlux&layout=donut&langs_count=10&theme=dark)](https://github-stats-extended.vercel.app/api/top-langs?username=Bownlux&layout=donut&langs_count=10&theme=dark)
+[![GitHub Stats](https://github-stats-extended.vercel.app/api/wakatime?username=Bownlux&layout=compact&custom_title=Bownlux's%20Wakatime%20Stats&langs_count=10&theme=dark)](https://wakatime.com/@Bownlux)
+
 
 [![wakatime](https://wakatime.com/badge/user/eeee360a-5196-43bc-84e2-e0e87dd85b36.svg)](https://wakatime.com/@eeee360a-5196-43bc-84e2-e0e87dd85b36)
 ---
 
-Made possible with https://github.com/anuraghazra/github-readme-stats
+Made possible with [GitHub Stats Extended](https://github.com/stats-organization/github-stats-extended)
