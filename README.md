@@ -1,5 +1,5 @@
 # GitHub Stats
-[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=Bownlux&show_icons=true&include_all_commits=true&theme=dark&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR)](https://github-stats-extended.vercel.app/api?username=Bownlux&show_icons=true&include_all_commits=true&theme=dark)
+[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=Bownlux&rank_icon=percentile&show_icons=true&include_all_commits=true&theme=dark)](https://github-stats-extended.vercel.app/api?username=Bownlux&rank_icon=percentile&show_icons=true&include_all_commits=true&theme=dark)
 
 [![Bownlux's Top Langs](https://github-stats-extended.vercel.app/api/top-langs?username=Bownlux&layout=donut&langs_count=10&theme=dark)](https://github-stats-extended.vercel.app/api/top-langs?username=Bownlux&layout=donut&langs_count=10&theme=dark)
 [![GitHub Stats](https://github-stats-extended.vercel.app/api/wakatime?username=Bownlux&layout=compact&custom_title=Bownlux's%20Wakatime%20Stats&langs_count=10&theme=dark)](https://wakatime.com/@Bownlux)
