@@ -13,7 +13,7 @@ I am a Java developer with about a year of experience, specializing in Minecraft
 
 ### 🚀 Featured Projects
 * **[RevivalSMP](revivalsmp.net):** RevivalSMP is a Minecraft Server with elements that makes it unique.
-* **[Retromod]([https://github.com/Bownlux/RetroMod]):** Retromod lets you Translate older mods to newer versions..
+* **[Retromod](https://github.com/Bownlux/RetroMod):** Retromod lets you Translate older mods to newer versions..
 
 ---
 
