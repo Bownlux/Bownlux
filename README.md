@@ -1,12 +1,12 @@
 # 👋 Hi, I'm Bownlux
 ### Java Developer | Minecraft Modder | Server Administrator
 
-I am a Java developer with about a year of experience, specializing in Minecraft server management and mod development. Currently, I'm contributing to RevivalSMP, building custom Minecraft mods, and learning Rust for systems and application development.
+I am a Java developer with about two of experience, specializing in Minecraft server management and mod development. Currently, I'm contributing to RevivalSMP, building custom Minecraft mods, and learning Rust for systems and application development.
 
 ---
 
 ### 🛠️ Tech Stack & Tools
-* **Languages:** Java, Rust, JavaScript, Python
+* **Languages:** Java, Swift, JavaScript, Python, Rust
 * **Minecraft Ecosystem:** Fabric, Forge, Neoforge, Paper/Purpur, Quilt.
 * **Tools:** Git and IntelliJ IDEA.
 ---
