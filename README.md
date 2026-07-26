@@ -6,7 +6,7 @@ I am a Java developer with about two of experience, specializing in Minecraft se
 ---
 
 ### 🛠️ Tech Stack & Tools
-* **Languages:** Java, Swift, JavaScript, Python, Rust
+* **Languages:** Java, Swift, Python, Rust
 * **Minecraft Ecosystem:** Fabric, Forge, Neoforge, Paper/Purpur, Quilt.
 * **Tools:** Git and IntelliJ IDEA.
 ---
