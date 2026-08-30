@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Bownlux
 ### Java Developer | Minecraft Modder | Server Administrator
 
-I am a Java developer with about two of experience, specializing in Minecraft server management and mod development. Currently, I'm contributing to RevivalSMP, building custom Minecraft mods, and learning Rust for systems and application development.
+I am a Java developer with about two years of experience, specializing in Minecraft server management and mod development. Currently, I'm contributing to RevivalSMP, building custom Minecraft mods, and learning Rust for systems and application development.
 
 ---
 
@@ -13,7 +13,7 @@ I am a Java developer with about two of experience, specializing in Minecraft se
 
 ### 🚀 Featured Projects
 * **[RevivalSMP](revivalsmp.net):** RevivalSMP is a Minecraft Server with elements that makes it unique.
-* **[Retromod](https://github.com/Bownlux/RetroMod):** Retromod lets you Translate older mods to newer versions..
+* **[Retromod](https://github.com/Bownlux/RetroMod):** Retromod lets you Translate older mods to newer versions.
 
 ---
 
