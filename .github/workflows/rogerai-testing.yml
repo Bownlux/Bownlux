@@ -9,6 +9,9 @@ on:
     paths:
       - ".github/workflows/rogerai-testing.yml"
 
+permissions:
+  contents: read
+
 jobs:
   health-check:
     runs-on: ubuntu-latest
