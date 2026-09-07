@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bownlux | Projects</title>
+    <meta
+      name="description"
+      content="Bownlux portfolio site with public projects and RogerAI.fm testing status."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Hi, I'm Bownlux 👋</h1>
+      <p>
+        Java developer, Minecraft modder, and server administrator. I build game-focused software and automation, and I am
+        currently exploring Rust for systems and application development.
+      </p>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>Featured projects</h2>
+        <ul>
+          <li>
+            <a href="https://revivalsmp.net" target="_blank" rel="noreferrer">RevivalSMP</a>
+            — Minecraft server project with unique gameplay elements.
+          </li>
+          <li>
+            <a href="https://github.com/Bownlux/RetroMod" target="_blank" rel="noreferrer">RetroMod</a>
+            — Tooling for translating older mods to newer versions.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Public GitHub projects</h2>
+        <p>All public repositories are loaded directly from GitHub.</p>
+        <div id="repo-status">Loading repositories…</div>
+        <ul id="repo-list"></ul>
+      </section>
+
+      <section>
+        <h2>RogerAI.fm testing</h2>
+        <p>
+          This repository runs an automated hourly health check for
+          <a href="https://rogerai.fm" target="_blank" rel="noreferrer">rogerai.fm</a>.
+        </p>
+        <p>
+          <a href="https://github.com/Bownlux/Bownlux/actions/workflows/rogerai-testing.yml" target="_blank" rel="noreferrer">
+            View latest RogerAI.fm test runs
+          </a>
+        </p>
+        <img
+          alt="RogerAI.fm health check status"
+          src="https://github.com/Bownlux/Bownlux/actions/workflows/rogerai-testing.yml/badge.svg"
+        />
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>
+        GitHub:
+        <a href="https://github.com/Bownlux" target="_blank" rel="noreferrer">@Bownlux</a>
+      </p>
+    </footer>
+
+    <script src="./repos.js"></script>
+  </body>
+</html>
