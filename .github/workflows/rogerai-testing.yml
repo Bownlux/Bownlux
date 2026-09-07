@@ -1,0 +1,23 @@
+name: RogerAI.fm Health Check
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/rogerai-testing.yml"
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check rogerai.fm
+        run: |
+          status=$(curl -s -o /dev/null -w "%{http_code}" https://rogerai.fm)
+          if [ "$status" -lt 200 ] || [ "$status" -ge 400 ]; then
+            echo "rogerai.fm health check failed with HTTP ${status}"
+            exit 1
+          fi
+          echo "rogerai.fm health check passed with HTTP ${status}"

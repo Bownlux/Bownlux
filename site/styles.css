@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(920px, 92vw);
+  margin: 0 auto;
+  padding: 1.25rem 0;
+}
+
+h1,
+h2 {
+  color: #93c5fd;
+}
+
+section {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+a {
+  color: #60a5fa;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+#repo-list li {
+  margin: 0.45rem 0;
+}
+
+#repo-status {
+  color: #94a3b8;
+}
