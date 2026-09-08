@@ -1,0 +1,9 @@
+# Used only by the Pages workflow, to build the Retromod docs (a Jekyll site in
+# the Bownlux/Retromod repo) into bownlux.dev/retromod.
+#
+# The github-pages gem pins the exact Jekyll and plugin versions GitHub's own
+# built-in Pages builder uses, which is what currently builds those docs for
+# bownlux.github.io/Retromod. Matching it keeps the two outputs identical.
+source "https://rubygems.org"
+
+gem "github-pages", group: :jekyll_plugins

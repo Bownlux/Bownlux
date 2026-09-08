@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bownlux</title>
+<meta name="description" content="Bownlux. Java developer. Retromod, Fabric Language Rust, Fabric Language Ruby, and RevivalSMP." />
+<link rel="canonical" href="https://bownlux.dev/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bownlux.dev/" />
+<meta property="og:title" content="Bownlux" />
+<meta property="og:description" content="Java developer. Retromod, Fabric language adapters for Rust and Ruby, RevivalSMP." />
+<meta property="og:image" content="https://bownlux.dev/img/retromod-banner.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#072027" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23072027'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='19' font-weight='700' fill='%2365d3e0' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="page">
+
+  <header class="masthead">
+    <img class="avatar" src="img/avatar.png" width="96" height="96" alt="Bownlux" />
+    <div>
+      <h1>Bownlux</h1>
+      <p class="sub">Java developer. Minecraft mods and server admin.</p>
+      <p class="links">
+        <a href="https://github.com/Bownlux">GitHub</a> ·
+        <a href="https://modrinth.com/user/Bownlux">Modrinth</a> ·
+        <a href="https://revivalsmp.net">RevivalSMP</a>
+      </p>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="split">
+      <div>
+        <p class="intro">
+          I've been writing Java for about two years. Most of it goes into Minecraft: the mods,
+          and the servers they run on. Right now that's mainly Retromod and RevivalSMP.
+        </p>
+        <p>
+          The modding and the server admin work turn out to be pretty different jobs. One is
+          writing code, the other is keeping things up and dealing with whatever broke this
+          week. I like both. I also write Swift, Python, Rust and a bit of Ruby, though the Rust
+          and the Ruby mostly circled back into Minecraft anyway, as Fabric language adapters.
+        </p>
+      </div>
+      <aside class="panel">
+        <h2>What I use</h2>
+        <dl class="stack">
+          <dt>Languages</dt>
+          <dd>Java, Swift, Python, Rust, Luau, some Ruby</dd>
+          <dt>Minecraft</dt>
+          <dd>Fabric, Forge, NeoForge, Quilt, Paper/Purpur</dd>
+          <dt>Tools</dt>
+          <dd>Git, IntelliJ IDEA</dd>
+        </dl>
+      </aside>
+    </div>
+
+    <h2 class="rule">Mods I've made</h2>
+
+    <article class="feature">
+      <div>
+        <a class="shot" href="https://modrinth.com/mod/retromod">
+          <img src="img/retromod-banner.png" width="1100" height="550"
+               alt="Retromod logo: a purple block with a reverse arrow, above a timeline running from Minecraft 1.12 to 26.1" />
+        </a>
+        <div class="figures" id="retromod-stats">
+          <div>
+            <span class="fig" data-stat="downloads">25,737</span>
+            <span class="lab">downloads</span>
+          </div>
+          <div>
+            <span class="fig" data-stat="stars">51</span>
+            <span class="lab">stars</span>
+          </div>
+          <div>
+            <span class="fig" data-stat="followers">196</span>
+            <span class="lab">followers</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3><a href="https://github.com/Bownlux/Retromod">Retromod</a></h3>
+        <p>
+          Older mods usually stop working when Minecraft updates. Retromod takes one of those
+          mods and rewrites the parts that broke so it runs on a current version, keeping a copy
+          of the original in case it doesn't go well.
+        </p>
+        <p>
+          It's deliberately cautious: if it can't be sure a change is safe, it leaves the mod
+          alone rather than handing you something that crashes. It works with Fabric, Quilt,
+          NeoForge and Forge on Minecraft 1.20 through 26.2, and there's a command line version
+          that can do a whole modpack in one go.
+        </p>
+        <p>
+          The first release went out in May 2026.
+        </p>
+        <p class="small">
+          <a href="https://modrinth.com/mod/retromod">Modrinth</a> ·
+          <a href="https://www.curseforge.com/minecraft/mc-mods/retromod">CurseForge</a> ·
+          <a href="/retromod/">Docs</a> ·
+          <a href="/retromod/compatdb/">Compatibility database</a>
+        </p>
+      </div>
+    </article>
+
+    <div class="split even">
+
+      <article class="card">
+        <div class="card-head">
+          <img class="icon" src="img/flrust.svg" width="64" height="64"
+               alt="Fabric Language Rust icon: a pixel-art Rust gear on a sand background" />
+          <h3><a href="https://github.com/Bownlux/Fabric-Language-Rust">Fabric Language Rust</a></h3>
+        </div>
+        <p>
+          Fabric mods are normally written in Java. This lets you write one in Rust instead.
+        </p>
+        <p>
+          Rust doesn't run on the JVM the way Java does, so a mod ships its compiled Rust for
+          each platform and this adapter picks the right one and hooks it up to Minecraft at
+          startup. It's v0.1 and more of a proof of concept than a finished tool.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <img class="icon" src="img/flruby.svg" width="64" height="64"
+               alt="Fabric Language Ruby icon: a faceted red ruby gem" />
+          <h3><a href="https://github.com/Bownlux/Fabric-language-Ruby">Fabric Language Ruby</a></h3>
+        </div>
+        <p>
+          Same idea, for Ruby. This one was less work, because JRuby already runs Ruby on the
+          JVM. The adapter carries a Ruby runtime inside it, so you point your mod at a
+          <code>.rb</code> file and it handles the rest.
+        </p>
+        <p>
+          It covers every Minecraft version Fabric supports, going back to 1.14, and it's happy
+          to sit alongside the Kotlin adapter if you use that too.
+        </p>
+        <p class="small">
+          <a href="https://modrinth.com/mod/fabric-language-ruby">Modrinth</a>
+        </p>
+      </article>
+
+    </div>
+
+    <h2 class="rule">RevivalSMP</h2>
+
+    <article class="feature">
+      <a class="shot" href="https://revivalsmp.net">
+        <img src="img/revivalsmp.png" width="900" height="464"
+             alt="RevivalSMP season 1 artwork: an isometric island with a cathedral, a graveyard and an auction area" />
+      </a>
+      <div>
+        <h3><a href="https://revivalsmp.net">RevivalSMP</a></h3>
+        <p>
+          The server I help run, with its own set of custom mechanics rather than being straight
+          vanilla. Most of my time goes here, which is the honest reason the language adapters
+          above get maintenance releases instead of steady new features.
+        </p>
+        <p>
+          Two bigger things have grown out of it, both of which I work on.
+        </p>
+      </div>
+    </article>
+
+    <article class="feature flip">
+      <a class="shot" href="https://revivalpvp.net">
+        <img src="img/revivalpvp.png" width="900" height="289"
+             alt="RevivalPVP art: two Minecraft characters facing off with swords on a torch-lit arena platform" />
+      </a>
+      <div>
+        <h3><a href="https://github.com/Bownlux/RevivalPVP">RevivalPVP</a></h3>
+        <p>
+          Cross-server ranked duels. Queue up from any server, or from single-player, get moved
+          to an arena, and climb a ladder for each kit. The player mod and the server plugin are
+          both open; the matchmaking behind them is ours.
+        </p>
+      </div>
+    </article>
+
+    <article class="card wide">
+      <h3><a href="https://play.revivalsmp.net/revival-worlds">Revival Worlds</a></h3>
+      <p>
+        A crowdhosting platform. You upload a Minecraft world, vanilla or modded, or start one
+        from a template, and other players keep it running by boosting it. Each boost lifts the
+        world's tier, which buys it more player slots, more mods and more memory, and each one
+        lasts a month before it lapses.
+      </p>
+      <p>
+        Putting a world up is free, and the boosts pay the person who made it: half the revenue
+        from every paid boost other players spend on that world goes to its owner. Works for
+        Java and Bedrock.
+      </p>
+    </article>
+
+    <h2 class="rule">Stats</h2>
+    <div class="stats">
+      <div class="stats-col wide-cards">
+        <img loading="lazy" width="467" height="195"
+             src="https://github-stats-extended.vercel.app/api?username=Bownlux&rank_icon=percentile&show_icons=true&include_all_commits=true&theme=dark"
+             alt="Bownlux's GitHub statistics" />
+        <img loading="lazy" width="495" height="215"
+             src="https://github-stats-extended.vercel.app/api/wakatime?username=Bownlux&layout=compact&custom_title=Bownlux's%20Wakatime%20Stats&langs_count=10&theme=dark"
+             alt="Bownlux's WakaTime coding stats" />
+      </div>
+      <div class="stats-col tall-card">
+        <img loading="lazy" width="350" height="375"
+             src="https://github-stats-extended.vercel.app/api/top-langs?username=Bownlux&layout=donut&langs_count=10&theme=dark"
+             alt="Bownlux's most used languages" />
+        <img loading="lazy" width="400" height="120"
+             src="profile/issues-solved.svg"
+             alt="Count of closed issues assigned to Bownlux" />
+      </div>
+    </div>
+    <p class="small">
+      Cards from <a href="https://github.com/stats-organization/github-stats-extended">GitHub Stats Extended</a>
+      and <a href="https://wakatime.com/@eeee360a-5196-43bc-84e2-e0e87dd85b36">WakaTime</a>.
+    </p>
+
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://github.com/Bownlux">GitHub</a> ·
+      <a href="https://modrinth.com/user/Bownlux">Modrinth</a> ·
+      <a href="https://revivalsmp.net">RevivalSMP</a>
+    </p>
+    <p class="small">Bownlux, <span id="year">2026</span></p>
+  </footer>
+
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// The figures above are written in at build time. Refresh them from the live APIs
+// when we can; if either call fails or is rate limited, the built-in numbers stand.
+(function () {
+  var box = document.getElementById('retromod-stats');
+  if (!box || !window.fetch) return;
+
+  function put(key, value) {
+    if (typeof value !== 'number' || !isFinite(value)) return;
+    var el = box.querySelector('[data-stat="' + key + '"]');
+    if (el) el.textContent = value.toLocaleString();
+  }
+
+  function grab(url) {
+    return fetch(url, { headers: { Accept: 'application/json' } })
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); });
+  }
+
+  grab('https://api.modrinth.com/v2/project/retromod').then(function (d) {
+    put('downloads', d.downloads);
+    put('followers', d.followers);
+  }).catch(function () {});
+
+  grab('https://api.github.com/repos/Bownlux/Retromod').then(function (d) {
+    put('stars', d.stargazers_count);
+  }).catch(function () {});
+})();
+</script>
+</body>
+</html>

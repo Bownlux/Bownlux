@@ -1,0 +1,96 @@
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "profile/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+  # Rebuild daily so the figures baked into the page stay current for visitors
+  # whose browser can't reach the APIs.
+  schedule:
+    - cron: "20 4 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish; queue at most one more.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out Retromod for its docs
+        uses: actions/checkout@v4
+        with:
+          repository: Bownlux/Retromod
+          ref: main
+          path: retromod-src
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+          working-directory: docs-build
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp -r site/. _site/
+          # The generated stat cards live outside site/, so pull them in.
+          mkdir -p _site/profile
+          cp profile/*.svg _site/profile/ 2>/dev/null || true
+
+      - name: Build the Retromod docs into /retromod
+        env:
+          # jekyll-remote-theme pulls just-the-docs from GitHub; without a token
+          # the anonymous API limit can fail the build.
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Those docs are written for bownlux.github.io/Retromod, so override
+          # the two location settings without touching the Retromod repo.
+          cat > "$RUNNER_TEMP/retromod-overrides.yml" <<'YAML'
+          baseurl: "/retromod"
+          url: "https://bownlux.dev"
+          YAML
+
+          if (cd docs-build && bundle exec jekyll build \
+                --source      "$GITHUB_WORKSPACE/retromod-src/docs" \
+                --destination "$GITHUB_WORKSPACE/retromod-build" \
+                --config      "$GITHUB_WORKSPACE/retromod-src/docs/_config.yml,$RUNNER_TEMP/retromod-overrides.yml")
+          then
+            rm -rf _site/retromod
+            cp -r retromod-build _site/retromod
+            echo "Built $(find _site/retromod -name '*.html' | wc -l) pages into /retromod"
+          else
+            echo "::warning title=Retromod docs::Jekyll build failed. /retromod keeps the redirect to bownlux.github.io/Retromod/ so the link still works."
+          fi
+
+      - name: Refresh the live figures
+        run: python3 scripts/update-stats.py _site/index.html
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

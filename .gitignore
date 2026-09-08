@@ -1,0 +1,7 @@
+.preview/
+.DS_Store
+__pycache__/
+retromod-build/
+docs-build/vendor/
+docs-build/.bundle/
+.jekyll-cache/
