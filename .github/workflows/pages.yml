@@ -8,8 +8,15 @@ on:
       - "profile/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
+  # /retromod is built from Bownlux/Retromod's docs, which live in another repo, so a docs change
+  # there triggers nothing here. Retromod can say "the docs moved" by sending this event:
+  #   gh api repos/Bownlux/Bownlux/dispatches -f event_type=retromod-docs
+  # Without it a docs edit waits for the nightly run below before it reaches the site.
+  repository_dispatch:
+    types: [retromod-docs]
   # Rebuild daily so the figures baked into the page stay current for visitors
-  # whose browser can't reach the APIs.
+  # whose browser can't reach the APIs, and so a Retromod docs change lands within a day even
+  # when nobody sends the event above.
   schedule:
     - cron: "20 4 * * *"
 
