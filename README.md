@@ -13,8 +13,8 @@ I am a Java developer with about two years of experience, specializing in Minecr
 
 ### 🚀 Featured Projects
 * **[RevivalSMP](revivalsmp.net):** RevivalSMP is a Minecraft Server with elements that makes it unique. I work on the Dev team and also test updates when they come out.
-* **[Retromod](https://github.com/Bownlux/RetroMod):** Retromod lets you Translate older mods to newer versions. Retromod has over 60k Downloads in total!
-* **[RogerAI](https://rogerai.fm)** RogerAI is a AI Sharing Service that lets you share and use AI's hosted by other people for free or a small fee. I made a PR to get RogerAI on Homebrew and I work as a tester for new updates.
+* **[Retromod](https://github.com/Bownlux/RetroMod):** Retromod lets you Translate older mods to newer versions. Retromod has over 70k Downloads in total!
+* **[RogerAI](https://rogerai.fm)** RogerAI is a AI Sharing Service that lets you share and use AI's hosted by other people for free or a small fee. I work as a tester for new updates.
 ---
 
 ### 📈 GitHub Stats
